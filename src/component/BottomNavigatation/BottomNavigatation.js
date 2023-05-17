@@ -2,10 +2,8 @@ import { StyleSheet, Text, View, Dimensions, Image } from 'react-native'
 import React from 'react'
 import Home from '../../Home';
 import Course from '../../Course';
-import Trial from '../../Trial';
 import AppStyle from '../../../AppStyle';
 import courseImg from '../../../assests/course.png'
-
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 const { width, height } = Dimensions.get('window')
 const Tab = createBottomTabNavigator();
@@ -17,23 +15,28 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 const BottomNavigatation = () => {
   return (
     <Tab.Navigator
-    initialRouteName="Home"
+
       screenOptions={{
         tabBarStyle: {
           backgroundColor: '#06060B',
-          height: 50
+          // height: 50,
+          // borderColor:"red",
+          // borderWidth:4,
+          marginHorizontal:(width*5)/100,
+          borderRadius:20,
+          marginBottom:10
         },
         tabBarShowLabel: false,
         // tabBarActiveTintColor: '#e91e63',
         // tabBarActiveTintColor: '#893',
         tabBarActiveBackgroundColor:"#902",
-        // tabBarInactiveBackgroundColor:'#532344'
-
+        // tabBarInactiveBackgroundColor:'#532344
 
       }}
     >
       <Tab.Screen name="Microweb Academy" component={Home}
         options={{
+          headerShown:false,
           headerStyle: {
             backgroundColor: "#06060B"
           },
@@ -48,9 +51,9 @@ const BottomNavigatation = () => {
         }} />
 
 
-      {/* <Tab.Screen name="Home" component={Home} /> */}
       <Tab.Screen name="Course" component={Course}
         options={{
+          headerShown:false,
           tabBarIcon: () => {
             return <Image style={AppStyle.navigationIcon} source={require("../../../assests/course.png")} />
           }

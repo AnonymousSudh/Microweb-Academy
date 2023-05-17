@@ -1,4 +1,5 @@
 import {Dimensions} from 'react-native'
+
 const {width,height} = Dimensions.get('window')
 
 const headingFont = 30;
@@ -11,7 +12,8 @@ export default AppStyle={
     },
     normalText:{
         color:"#E5E8F1",
-        fontSize:18
+        fontSize:18,
+        fontFamily: "PTSerif-Regular"
         
     },
     navigationIcon:{

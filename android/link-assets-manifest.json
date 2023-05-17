@@ -1,0 +1,21 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/PTSerif-Bold.ttf",
+      "sha1": "bd3420a64f17abba655c59bcd47bbff015e98e9b"
+    },
+    {
+      "path": "assets/fonts/PTSerif-BoldItalic.ttf",
+      "sha1": "59920893869696202e63ab51ff4a08924efb4a5d"
+    },
+    {
+      "path": "assets/fonts/PTSerif-Italic.ttf",
+      "sha1": "9db935daaf3cd369086dcf3a50d0278829992576"
+    },
+    {
+      "path": "assets/fonts/PTSerif-Regular.ttf",
+      "sha1": "954241a37698c9cbb040a7ce005b02646bc68cde"
+    }
+  ]
+}
