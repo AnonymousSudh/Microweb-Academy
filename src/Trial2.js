@@ -3,7 +3,7 @@ import React from 'react'
 
 const Trial2 = () => {
   return (
-    <View>
+    <View style={{backgroundColor:black}}>
       <Text>Trial2</Text>
     </View>
   )
@@ -12,3 +12,6 @@ const Trial2 = () => {
 export default Trial2
 
 const styles = StyleSheet.create({})
+
+
+

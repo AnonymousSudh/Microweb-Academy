@@ -18,23 +18,23 @@ const BottomNavigatation = () => {
 
       screenOptions={{
         tabBarStyle: {
-          backgroundColor: '#06060B',
+          // backgroundColor: '#06060B',
           // height: 50,
           // borderColor:"red",
           // borderWidth:4,
-          marginHorizontal:(width*5)/100,
-          borderRadius:20,
-          marginBottom:10
+          // marginHorizontal:(width*5)/100,
+          // borderRadius:20,
+          // marginBottom:10
         },
         tabBarShowLabel: false,
         // tabBarActiveTintColor: '#e91e63',
         // tabBarActiveTintColor: '#893',
         tabBarActiveBackgroundColor:"#902",
-        // tabBarInactiveBackgroundColor:'#532344
+        tabBarInactiveBackgroundColor:'#532344'
 
       }}
     >
-      <Tab.Screen name="Microweb Academy" component={Home}
+      <Tab.Screen name="Microweb Academy." component={Home}
         options={{
           headerShown:false,
           headerStyle: {
@@ -67,7 +67,7 @@ const BottomNavigatation = () => {
 
             />
           }
-        }}
+        }} 
       /> */}
     </Tab.Navigator>
   );

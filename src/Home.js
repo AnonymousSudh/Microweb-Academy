@@ -15,7 +15,6 @@ const Home = () => {
       <Course />
       <Gallery />
 
-
     </ScrollView>
 
   )
@@ -25,12 +24,14 @@ export default Home
 
 const styles = StyleSheet.create({
   HomePage: {
+    // borderWidth:1,
+    // borderColor:"red",
     backgroundColor: "#06060B",
-    height: height,
+    height: "110%",
     paddingHorizontal: 5,
     Color: '#E5E8F1',
-    paddingTop:8,
-    maxHeight:(height*80)/100
+    paddingTop: 8,
+    // maxHeight:(height*80)/100
   },
   paragraph: {
     paddingLeft: 8,

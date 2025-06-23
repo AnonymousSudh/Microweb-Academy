@@ -23,7 +23,7 @@ const Gallery = () => {
           {imageArray.map((val) => {
             return (
               <TouchableOpacity
-                // onPress={navigation.navigate("Gallery")}
+                onPress={() => navigation.navigate("Gallery")}
               >
 
                 <Image
@@ -34,7 +34,7 @@ const Gallery = () => {
               </TouchableOpacity>
             )
           })}
-        </ ScrollView>
+        </ScrollView>
 
       </View>
     </View>
@@ -48,19 +48,19 @@ const styles = StyleSheet.create({
     display: 'flex',
     // justifyContent:
     flexDirection: 'row',
-    marginBottom:20,
-    marginTop:10
+    marginBottom: 20,
+    marginTop: 10
   },
   galleryImg: {
     // borderColor: "red",
     // borderWidth: 1,
-    marginHorizontal:5,
+    marginHorizontal: 5,
     width: 150,
-    borderRadius:10,
+    borderRadius: 10,
     // height: 150,
-    aspectRatio:1
+    aspectRatio: 1
 
     // paddingBottom:400
   },
-  
+
 })
